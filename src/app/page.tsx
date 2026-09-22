@@ -1,5 +1,5 @@
 import Banner from "@/Components/Banner/Banner";
-import Books from "./books/page";
+import Books from "@/Components/Books/Books";
 import { Ibook } from "@/Type/Type";
 
 const getBooks = async (): Promise<Ibook[]> => {

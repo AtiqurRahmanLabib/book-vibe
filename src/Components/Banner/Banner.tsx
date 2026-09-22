@@ -17,7 +17,7 @@ const Banner = ({ books }: BannerProps) => {
 
     const interval = setInterval(() => {
       setCurrentIndex((prev) => (prev + 1) % books.length);
-    }, 5000);
+    }, 2000);
 
     return () => clearInterval(interval);
   }, [books.length]);
@@ -52,7 +52,7 @@ const Banner = ({ books }: BannerProps) => {
             </p>
 
             <Link
-              href={`/book/${currentBook.bookId}`}
+              href={`/books/${currentBook.bookId}`}
               className="mx-auto flex h-14 w-full items-center justify-center rounded-xl bg-[#4b3a2b] px-6 text-sm font-semibold text-white shadow-lg shadow-[#4b3a2b]/20 transition-all duration-300 hover:bg-[#34281e] hover:shadow-xl active:scale-[0.98] sm:w-52 lg:mx-0 lg:h-16"
             >
               View Book
