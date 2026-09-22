@@ -1,3 +1,4 @@
+import ReadButton from "@/Components/ReadButton/ReadButton";
 import { Ibook } from "@/Type/Type";
 import Image from "next/image";
 import Link from "next/link";
@@ -16,13 +17,11 @@ const getBooks = async (): Promise<Ibook[]> => {
 
 const BookDetailsPage = async ({ params }: BookDetailsPropType) => {
   const booksData = await getBooks();
-  console.log(booksData);
   const { bookId } = await params;
-  console.log(bookId);
   const book = booksData.find(
     (book: Ibook) => String(book.bookId) === String(bookId),
   ) as Ibook;
-  console.log(book);
+
   return (
     <main className="min-h-screen bg-[#f7f3eb] px-4 py-10 sm:px-6 lg:px-8">
       <div className="mx-auto max-w-6xl">
@@ -160,13 +159,8 @@ const BookDetailsPage = async ({ params }: BookDetailsPropType) => {
               {/* Action Buttons */}
               <div className="mt-10 flex flex-col gap-3 sm:flex-row">
                 {/* Read Button */}
-                <Link
-                  href={`/book/${book.bookId}/read`}
-                  className="flex flex-1 items-center justify-center gap-2 rounded-xl bg-[#4b3a2b] px-5 py-3.5 text-sm font-semibold text-white transition-all duration-300 hover:bg-[#34281e] active:scale-[0.98]"
-                >
-                  <span>📖</span>
-                  Read Book
-                </Link>
+
+                <ReadButton book={book}/>
 
                 {/* Wishlist Button */}
                 <button
