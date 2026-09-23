@@ -1,3 +1,4 @@
+'use client'
 import { Ibook } from "@/Type/Type";
 import { createContext, ReactNode, useState } from "react";
 

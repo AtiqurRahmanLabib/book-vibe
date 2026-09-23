@@ -2,6 +2,9 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/Components/Shared/Navbar/Navbar";
+import BookContextProvider from "@/Context/BookContext";
+import { Toaster } from "react-hot-toast";
+import Footer from "@/Components/Shared/Footer/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -21,13 +24,47 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
-      lang="en" 
+      lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
-        <Navbar></Navbar>
-        {children}
-        </body>
+        <BookContextProvider>
+          {/* <Toaster position="top-center" /> */}
+          <Toaster
+            position="top-right"
+            toastOptions={{
+              duration: 3000,
+
+              style: {
+                background: "#F8F3E8",
+                color: "#3B2F25",
+                border: "1px solid #C8A96B",
+                borderRadius: "4px",
+                padding: "14px 18px",
+                boxShadow: "0 10px 30px rgba(59, 47, 37, 0.15)",
+                fontFamily: "Georgia, serif",
+              },
+
+              success: {
+                iconTheme: {
+                  primary: "#8A6A32",
+                  secondary: "#F8F3E8",
+                },
+              },
+
+              error: {
+                iconTheme: {
+                  primary: "#8B3A32",
+                  secondary: "#F8F3E8",
+                },
+              },
+            }}
+          />
+          <Navbar></Navbar>
+          {children}
+        </BookContextProvider>
+        <Footer></Footer>
+      </body>
     </html>
   );
 }

@@ -3,13 +3,23 @@
 import { BooksContext } from "@/Context/BookContext";
 import { Ibook } from "@/Type/Type";
 import { useContext } from "react";
+import toast from "react-hot-toast";
 
 const ReadButton = ({ book }: { book: Ibook }) => {
   const { readBooks, setReadBooks } = useContext(BooksContext);
 
   const handleRead = () => {
-    console.log("Button clicked", book);
+    const alreadyRead = readBooks.some(
+      (readBook) => readBook.bookId === book.bookId,
+    );
+
+    if (alreadyRead) {
+      toast.error(`${book.bookName} is already in Read!`);
+      return;
+    }
+
     setReadBooks([...readBooks, book]);
+    toast.success(`${book.bookName} added to Read!`);
   };
   return (
     <div>

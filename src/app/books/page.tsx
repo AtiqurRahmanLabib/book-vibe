@@ -2,15 +2,23 @@ import Books from "@/Components/Books/Books";
 import { Ibook } from "@/Type/Type";
 
 const getBooks = async (): Promise<Ibook[]> => {
-  const res = await fetch("http://localhost:5000/books", {
-    next: { revalidate: 10 },
-  });
+  try {
+    const res = await fetch(
+      `${process.env.NEXT_PUBLIC_SERVER_BASE_URL}/books`,
+      {
+        next: { revalidate: 10 },
+      },
+    );
 
-  if (!res.ok) {
-    throw new Error("Failed to fetch books");
+    if (!res.ok) {
+      throw new Error("Failed to fetch books");
+    }
+
+    return res.json();
+  } catch (error) {
+    console.error("Error fetching books:", error);
+    throw error;
   }
-
-  return res.json();
 };
 
 const BooksPage = async () => {

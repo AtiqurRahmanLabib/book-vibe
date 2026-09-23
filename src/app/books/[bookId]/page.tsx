@@ -1,18 +1,32 @@
 import ReadButton from "@/Components/ReadButton/ReadButton";
+import WishListButton from "@/Components/WishListButton/WishListButton";
 import { Ibook } from "@/Type/Type";
 import Image from "next/image";
 import Link from "next/link";
+import toast from "react-hot-toast";
 
 interface BookDetailsPropType {
   params: Promise<{ bookId: string }>;
 }
 
 const getBooks = async (): Promise<Ibook[]> => {
-  const res = await fetch("http://localhost:5000/books", {
-    next: { revalidate: 10 },
-  });
-  const data: Ibook[] = await res.json();
-  return data;
+  try {
+    const res = await fetch(
+      `${process.env.NEXT_PUBLIC_SERVER_BASE_URL}/books`,
+      {
+        next: { revalidate: 10 },
+      },
+    );
+
+    if (!res.ok) {
+      throw new Error("Failed to fetch books");
+    }
+
+    return res.json();
+  } catch (error) {
+    toast.error(`Error fetching books: ${error}`);
+    throw error;
+  }
 };
 
 const BookDetailsPage = async ({ params }: BookDetailsPropType) => {
@@ -160,16 +174,10 @@ const BookDetailsPage = async ({ params }: BookDetailsPropType) => {
               <div className="mt-10 flex flex-col gap-3 sm:flex-row">
                 {/* Read Button */}
 
-                <ReadButton book={book}/>
+                <ReadButton book={book} />
 
                 {/* Wishlist Button */}
-                <button
-                  type="button"
-                  className="flex flex-1 items-center justify-center gap-2 rounded-xl border border-[#cfc2b1] bg-[#fffdf8] px-5 py-3.5 text-sm font-semibold text-[#55483a] transition-all duration-300 hover:border-[#a99a87] hover:bg-[#f5efe5] active:scale-[0.98]"
-                >
-                  <span>♡</span>
-                  Add to Wishlist
-                </button>
+                <WishListButton book={book}></WishListButton>
               </div>
             </div>
           </div>

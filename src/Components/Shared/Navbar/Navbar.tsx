@@ -15,7 +15,7 @@ const Navbar = () => {
 
       <li>
         <Link
-          href="/book"
+          href="/listed-book"
           className="transition-colors duration-300 hover:text-[#8b6f47]"
         >
           Listed Books
