@@ -77,7 +77,7 @@ const Navbar = () => {
             href="/"
             className="font-serif text-2xl font-bold tracking-tight text-[#3d3025] sm:text-[28px]"
           >
-            Megh <span className="text-[#8b6f47]">Vibe</span>
+            Book <span className="text-[#8b6f47]">Vibe</span>
           </Link>
         </div>
 
