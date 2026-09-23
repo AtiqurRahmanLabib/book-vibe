@@ -11,7 +11,7 @@ interface BookDetailsPropType {
 const getBooks = async (): Promise<Ibook[]> => {
   try {
     const res = await fetch(
-      `${process.env.NEXT_PUBLIC_SERVER_BASE_URL}/books`,
+      `${process.env.NEXT_PUBLIC_SERVER_BASE_URL}/data.json`,
       {
         next: { revalidate: 10 },
       },
@@ -23,7 +23,7 @@ const getBooks = async (): Promise<Ibook[]> => {
 
     return res.json();
   } catch (error) {
-    console.error(`Error fetching books: ${error}`);
+    console.error("Error fetching books:", error);
     return [];
   }
 };
