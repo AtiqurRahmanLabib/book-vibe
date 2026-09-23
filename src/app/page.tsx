@@ -1,24 +1,16 @@
 import Banner from "@/Components/Banner/Banner";
 import Books from "@/Components/Books/Books";
 import { Ibook } from "@/Type/Type";
-export const dynamic = "force-dynamic";
 
 const getBooks = async (): Promise<Ibook[]> => {
   try {
-    const res = await fetch(
+    const response = await fetch(
       `${process.env.NEXT_PUBLIC_SERVER_BASE_URL}/data.json`,
-      {
-        next: { revalidate: 10 },
-      },
     );
-
-    if (!res.ok) {
-      throw new Error("Failed to fetch books");
-    }
-
-    return res.json();
+    const data = await response.json();
+    return data;
   } catch (error) {
-    console.error("Error fetching books:", error);
+    console.error("Error fetching books data:", error);
     return [];
   }
 };

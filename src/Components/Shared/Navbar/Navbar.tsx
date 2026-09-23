@@ -35,7 +35,7 @@ const Navbar = () => {
 
   return (
     <header className="border-b border-[#e5ddd0] bg-[#fffdf8]">
-      <div className="navbar container mx-auto min-h-[80px] px-4 sm:px-6 lg:px-8">
+      <div className="navbar container mx-auto min-h-20 px-4 sm:px-6 lg:px-8">
 
         {/* Logo + Mobile Menu */}
         <div className="navbar-start">
