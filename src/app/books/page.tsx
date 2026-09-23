@@ -16,8 +16,8 @@ const getBooks = async (): Promise<Ibook[]> => {
 
     return res.json();
   } catch (error) {
-    console.error("Error fetching books:", error);
-    throw error;
+    console.error(`Error fetching books: ${error}`);
+    return [];
   }
 };
 

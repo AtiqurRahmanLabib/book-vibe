@@ -4,7 +4,6 @@ import { Ibook } from "@/Type/Type";
 import Image from "next/image";
 import Link from "next/link";
 
-
 interface BookDetailsPropType {
   params: Promise<{ bookId: string }>;
 }
@@ -25,7 +24,7 @@ const getBooks = async (): Promise<Ibook[]> => {
     return res.json();
   } catch (error) {
     console.error(`Error fetching books: ${error}`);
-    throw error;
+    return [];
   }
 };
 
