@@ -3,7 +3,7 @@ import WishListButton from "@/Components/WishListButton/WishListButton";
 import { Ibook } from "@/Type/Type";
 import Image from "next/image";
 import Link from "next/link";
-import toast from "react-hot-toast";
+
 
 interface BookDetailsPropType {
   params: Promise<{ bookId: string }>;
@@ -24,7 +24,7 @@ const getBooks = async (): Promise<Ibook[]> => {
 
     return res.json();
   } catch (error) {
-    toast.error(`Error fetching books: ${error}`);
+    console.error(`Error fetching books: ${error}`);
     throw error;
   }
 };

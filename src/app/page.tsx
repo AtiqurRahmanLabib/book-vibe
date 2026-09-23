@@ -1,7 +1,7 @@
 import Banner from "@/Components/Banner/Banner";
 import Books from "@/Components/Books/Books";
 import { Ibook } from "@/Type/Type";
-import toast from "react-hot-toast";
+
 
 const getBooks = async (): Promise<Ibook[]> => {
   try {
@@ -18,7 +18,7 @@ const getBooks = async (): Promise<Ibook[]> => {
 
     return res.json();
   } catch (error) {
-    toast.error(`Error fetching books: ${error}`);
+    console.error(`Error fetching books: ${error}`);
     throw error;
   }
 };
