@@ -8,8 +8,6 @@
 
 ## 📸 Project Preview
 
-## 📸 Project Preview
-
 ### 🏠 Home Page
 
 ![Home Page](./screenshots/home.png)
@@ -28,36 +26,29 @@
 
 ### 📋 Listed Books
 
-![Listed Books](./screenshots/listed-books.png)
-=======
-<!-- Add your project screenshot here -->
-
-![Book Vibe Screenshot](./screenshot.png)
-
-
----
+## ![Listed Books](./screenshots/listed-books.png)
 
 ## ✨ Features
 
-* 📚 Browse different categories of books
-* 🔎 Explore and discover books
-* 📖 View book details
-* 🛒 E-commerce-style book browsing experience
-* 📊 Track reading activity with a visual chart
-* 📈 Display reading/activity statistics
-* 📱 Responsive design for different screen sizes
-* 🎨 Modern and clean user interface
-* ⚡ Fast and interactive user experience
+- 📚 Browse different categories of books
+- 🔎 Explore and discover books
+- 📖 View book details
+- 🛒 E-commerce-style book browsing experience
+- 📊 Track reading activity with a visual chart
+- 📈 Display reading/activity statistics
+- 📱 Responsive design for different screen sizes
+- 🎨 Modern and clean user interface
+- ⚡ Fast and interactive user experience
 
 ---
 
 ## 🛠️ Technologies Used
 
-* **TypeScript** — Main programming language
-* **Node.js** — Development/runtime environment
-* **Tailwind CSS** — Styling and responsive design
-* **DaisyUI** — UI components
-* **Next.js** — React-based framework and application structure
+- **TypeScript** — Main programming language
+- **Node.js** — Development/runtime environment
+- **Tailwind CSS** — Styling and responsive design
+- **DaisyUI** — UI components
+- **Next.js** — React-based framework and application structure
 
 ---
 
@@ -65,21 +56,21 @@
 
 ### Main Dependencies
 
-* `next`
-* `react`
-* `react-dom`
+- `next`
+- `react`
+- `react-dom`
 
 ### Development Dependencies
 
-* `@tailwindcss/postcss`
-* `@types/node`
-* `@types/react`
-* `@types/react-dom`
-* `daisyui`
-* `eslint`
-* `eslint-config-next`
-* `tailwindcss`
-* `typescript`
+- `@tailwindcss/postcss`
+- `@types/node`
+- `@types/react`
+- `@types/react-dom`
+- `daisyui`
+- `eslint`
+- `eslint-config-next`
+- `tailwindcss`
+- `typescript`
 
 ---
 
@@ -143,12 +134,12 @@ The project uses **Tailwind CSS** along with **DaisyUI** to create a clean, resp
 
 The design focuses on:
 
-* Simple navigation
-* Responsive layouts
-* Reusable UI components
-* Easy book discovery
-* Clear presentation of book information
-* Visual representation of reading activity
+- Simple navigation
+- Responsive layouts
+- Reusable UI components
+- Easy book discovery
+- Clear presentation of book information
+- Visual representation of reading activity
 
 ---
 
@@ -162,7 +153,8 @@ https://book-vibe-orcin-three.vercel.app/
 https://github.com/AtiqurRahmanLabib/book-vibe
 =======
 Add your GitHub repository link here.
->>>>>>> cc0fd87ad5308c2bc306bc95319c1ca07fce7b2c
+
+> > > > > > > cc0fd87ad5308c2bc306bc95319c1ca07fce7b2c
 
 ---
 
