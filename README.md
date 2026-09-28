@@ -1,36 +1,173 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📚 Book Vibe
 
-## Getting Started
+**Book Vibe** is an e-commerce-style online bookstore where users can explore and discover different types of books. Users can browse books, view book information, and track their reading activity through a visual activity chart.
 
-First, run the development server:
+🔗 **Live Website:** https://book-vibe-orcin-three.vercel.app/
+
+---
+
+## 📸 Project Preview
+
+## 📸 Project Preview
+
+### 🏠 Home Page
+
+![Home Page](./screenshots/home.png)
+
+### 📚 Book Collection
+
+![Book Collection](./screenshots/books.png)
+
+### 📖 Book Details
+
+![Book Details](./screenshots/book-details.png)
+
+### 📊 Reading Statistics
+
+![Reading Statistics](./screenshots/reading-statistics.png)
+
+### 📋 Listed Books
+
+![Listed Books](./screenshots/listed-books.png)
+=======
+<!-- Add your project screenshot here -->
+
+![Book Vibe Screenshot](./screenshot.png)
+
+
+---
+
+## ✨ Features
+
+* 📚 Browse different categories of books
+* 🔎 Explore and discover books
+* 📖 View book details
+* 🛒 E-commerce-style book browsing experience
+* 📊 Track reading activity with a visual chart
+* 📈 Display reading/activity statistics
+* 📱 Responsive design for different screen sizes
+* 🎨 Modern and clean user interface
+* ⚡ Fast and interactive user experience
+
+---
+
+## 🛠️ Technologies Used
+
+* **TypeScript** — Main programming language
+* **Node.js** — Development/runtime environment
+* **Tailwind CSS** — Styling and responsive design
+* **DaisyUI** — UI components
+* **Next.js** — React-based framework and application structure
+
+---
+
+## 📦 Dependencies
+
+### Main Dependencies
+
+* `next`
+* `react`
+* `react-dom`
+
+### Development Dependencies
+
+* `@tailwindcss/postcss`
+* `@types/node`
+* `@types/react`
+* `@types/react-dom`
+* `daisyui`
+* `eslint`
+* `eslint-config-next`
+* `tailwindcss`
+* `typescript`
+
+---
+
+## 🚀 Getting Started
+
+Follow these steps to run the project locally.
+
+### 1. Clone the Repository
+
+```bash
+git clone <your-github-repository-url>
+```
+
+### 2. Navigate to the Project Directory
+
+```bash
+cd <project-folder-name>
+```
+
+### 3. Install Dependencies
+
+Using npm:
+
+```bash
+npm install
+```
+
+Or using yarn:
+
+```bash
+yarn install
+```
+
+### 4. Run the Development Server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 5. Open in Browser
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+After starting the development server, open:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```text
+http://localhost:3000
+```
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 📊 Reading Activity
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+One of the main features of **Book Vibe** is the reading activity visualization.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+When a user reads a book, the reading activity can be represented through a chart, making it easier to track and understand their reading progress and activity.
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🎨 UI & Design
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+The project uses **Tailwind CSS** along with **DaisyUI** to create a clean, responsive, and modern interface.
+
+The design focuses on:
+
+* Simple navigation
+* Responsive layouts
+* Reusable UI components
+* Easy book discovery
+* Clear presentation of book information
+* Visual representation of reading activity
+
+---
+
+## 🔗 Links
+
+🌐 **Live Website:**
+https://book-vibe-orcin-three.vercel.app/
+
+💻 **GitHub Repository:**
+<<<<<<< HEAD
+https://github.com/AtiqurRahmanLabib/book-vibe
+=======
+Add your GitHub repository link here.
+>>>>>>> cc0fd87ad5308c2bc306bc95319c1ca07fce7b2c
+
+---
+
+## 👨‍💻 Author
+
+**Atiqur Rahman Labib**
+
+If you like this project, feel free to ⭐ the repository!
