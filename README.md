@@ -26,7 +26,9 @@
 
 ### 📋 Listed Books
 
-## ![Listed Books](./screenshots/listed-books.png)
+![Listed Books](./screenshots/listed-books.png)
+
+---
 
 ## ✨ Features
 
@@ -149,12 +151,7 @@ The design focuses on:
 https://book-vibe-orcin-three.vercel.app/
 
 💻 **GitHub Repository:**
-<<<<<<< HEAD
 https://github.com/AtiqurRahmanLabib/book-vibe
-=======
-Add your GitHub repository link here.
-
-> > > > > > > cc0fd87ad5308c2bc306bc95319c1ca07fce7b2c
 
 ---
 
