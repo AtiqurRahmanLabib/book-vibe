@@ -8,9 +8,32 @@
 
 ## 📸 Project Preview
 
+## 📸 Project Preview
+
+### 🏠 Home Page
+
+![Home Page](./screenshots/home.png)
+
+### 📚 Book Collection
+
+![Book Collection](./screenshots/books.png)
+
+### 📖 Book Details
+
+![Book Details](./screenshots/book-details.png)
+
+### 📊 Reading Statistics
+
+![Reading Statistics](./screenshots/reading-statistics.png)
+
+### 📋 Listed Books
+
+![Listed Books](./screenshots/listed-books.png)
+=======
 <!-- Add your project screenshot here -->
 
 ![Book Vibe Screenshot](./screenshot.png)
+
 
 ---
 
@@ -135,7 +158,11 @@ The design focuses on:
 https://book-vibe-orcin-three.vercel.app/
 
 💻 **GitHub Repository:**
+<<<<<<< HEAD
+https://github.com/AtiqurRahmanLabib/book-vibe
+=======
 Add your GitHub repository link here.
+>>>>>>> cc0fd87ad5308c2bc306bc95319c1ca07fce7b2c
 
 ---
 
